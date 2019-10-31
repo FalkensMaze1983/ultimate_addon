@@ -15,13 +15,14 @@ Make sure you have the following ready:
   - Please follow the official OTA upgrade procedure from the user manual to update your firmware to a compatible version
 - A USB drive with enough storage to hold your files
   - Please make sure the drive is formatted in FAT(FAT32) file system
-- Linux environment to run the script on
-- Files to be packed into the image
-  - Emulator .so file (LibRetro API emulator core is recommended, *Note: emulator must be compatible with LibRetro APIs*)
-  - Game files (Must be compatible with the emulator above)
-  - Box art 
-  - XML file
-  - Script file to execute the game file with the emulator (exec.sh)
+- Linux users: 
+  - Files to be packed into the image (look under "AddOn_Warpspeed" directory)
+    - Emulator .so file (LibRetro API emulator core is recommended, *Note: emulator must be compatible with LibRetro APIs*)
+    - Game files (Must be compatible with the emulator above)
+    - Box art 
+    - XML file
+    - Script file to execute the game file with the emulator (exec.sh)
+- Windows users: look under "AddOn_tool“ directory for the Windows installer and its readme file
 
 ### File Structure
 
