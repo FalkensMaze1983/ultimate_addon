@@ -106,7 +106,7 @@ Use the following steps if you'd like to automate the build process and build ma
   ```
 
 - the batch script will go under the source directory and run the build script against each sub-directory
-- the output files will be the same as the sub-directories
+- the output file names will be the same as the sub-directory names
 
 ## Playing on the Console
 
