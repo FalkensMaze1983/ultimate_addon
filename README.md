@@ -71,8 +71,45 @@ The stack inside the Add-on image looks like this:
 
 ![Add-on Stack](addOnStack.png)
 
+## Batch Building Images
+
+Use the following steps if you'd like to automate the build process and build many games at once
+
+- prepare the add-on images the same way as before (use the file structure described earlier)
+- preferably, make a new directory and move all the add-on directories under it, like so:
+```
++----------+ 
+|   games  | <-- parent directory
++---+------+      
+    |
+    |   +---------+ 
+    +-- | addOn1  |  <-- game 1
+    |   +---------+      
+    |     
+    |   +---------+ 
+    +-- | addOn2  |  <-- game 2
+    |   +---------+      
+    .
+    .
+    .
+    |   +---------+ 
+    +-- | addOnX  |  <-- game X
+        +---------+      
+```
+- make sure the **batch_build.sh** is executable and in the same directory as **build_sq_cartridge_pack.sh** and run the following command 
+
+  - 1st arg is source directory (optional, defaults to pwd)
+  - 2nd arg is output directory (optional, defaults to pwd)
+  
+  ```bash
+  ./batch_build.sh ./games 
+  ```
+
+- the batch script will go under the source directory and run the build script against each sub-directory
+- the output files will be the same as the sub-directories
 
 ## Playing on the Console
+
 Copy the output Warpspeed.UCE file from the previous section into the root of the USB drive, then insert the drive into either USB slots on the console's control-top. 
 
 Navigate to the GAME page and the system should automatically load the game(s) if the image is valid, and a new filter named "Add-on" will appear on the left side of the [Games] menu.
