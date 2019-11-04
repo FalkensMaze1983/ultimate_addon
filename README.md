@@ -5,6 +5,8 @@ This is an unofficial guide to packing your own apps into an  "Add-on Image" for
 ## Disclaimer
 We are not obligated to provide updates or fixes to this guide. We are not responsible if the app you developed damages or voids the warranty on the Legends Ultimate home arcade. Please use this guide responsibly, as we are strong believers in intellectual property rights and do not advocate copyright infringement in any way. It is the sole responsibility of the developer to obtain any and all rights to use and/or distribute any and all software and related items packaged.
 
+It is the end user's sole responsibility to legally acquire any and all materials for use on a particular emulator. Such as the MAME ROMs that have been approved for free distribution by the MAME organization, please visit https://www.mamedev.org/roms/ . 
+
 ## Getting Started
 The following sections will prepare your home arcade, as well as the files to be packed into an add-on image.
 
