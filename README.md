@@ -60,6 +60,24 @@ Please adhere the following file structure when preparing your add-on image
                             the example contains:
                             /emulator/retroplayer ./emu/genesis_plus_gx_libretro.so "./roms/Warpspeed.bin"
 ```
+#### Optional: Bezel Art Support
+
+To set a bezel art for the game, add a 1280x720 PNG file under /boxart, name it "addon.z.png".
+
+Then update "exec.sh" to be as follows:
+
+```shell
+#!/bin/sh
+
+cp ./boxart/addon.z.png /tmp
+echo -e "[Property]\nBezelPath=/tmp/addon.z.png" > /tmp/gameinfo.ini
+
+set -x
+/emulator/retroplayer ./emu/genesis_plus_gx_libretro.so "./roms/Warpspeed.bin"
+
+rm -f /tmp/gameingo.ini
+```
+
 ## Building the Add-on Image
 
 After preparing the files into the structure above, run the following Linux shell script to make a .UCE image file
