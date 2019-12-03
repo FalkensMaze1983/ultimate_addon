@@ -13,10 +13,10 @@ The following sections will prepare your home arcade, as well as the files to be
 ### Prerequisites
 Make sure you have the following ready:
 
-- Arcade console running firmware **2.0.0** or later
+- Arcade console running firmware **3.0.11** or later
   - Please follow the official OTA upgrade procedure from the user manual to update your firmware to a compatible version
 - A USB drive with enough storage to hold your files
-  - Please make sure the drive is formatted in FAT(FAT32) file system
+  - Please make sure the drive is formatted in FAT(FAT32, exFAT) file system
 - Linux users: 
   - Files to be packed into the image (look under "AddOn_Warpspeed" directory)
     - Emulator .so file (LibRetro API emulator core is recommended, *Note: emulator must be compatible with LibRetro APIs*)
@@ -147,7 +147,13 @@ Q: Will my add-on game saves disappear when I unplug the USB drive?
 > The game saves are stored inside the image on the USB drive, not in the console. Therefore they should be there as long as the files on the drive remains intact
 
 Q: I accidentally loaded an incompatible add-on image and my screen turned black, how do I get out of this?
-> You should be able to force quit the game by pressing <MENU> button twice. If not then simply power cycle the console and you will be back to the main screen
+> You should be able to force quit the game by pressing <MENU> button twice. If not then simply power cycle the console and you will be back to the main screen.
+
+Q: Some UCE games crashes my arcade after upgrading to firmware 3.0.11, they used to work before.
+> It looks like anti-aliasing is enabled by default for mame2003+ cores, please make sure you use a newer core from libretro to support this option.
+
+Q: I am unable to enter my add-on game after new firmware update, it just takes me back to the menu UI.
+> Some mame2003+ ROMs require an empty "hiscore.dat" file under /roms directory for compatibility issues. Please repack your game with the file using Linux script, or repack using the updated Windows tool.
 
 Q: I'd like to develop my own games and try them out on the arcade, where do I start?
 > I'm looking into this now, check back in a bit and I'll update this repo with what I can find.
