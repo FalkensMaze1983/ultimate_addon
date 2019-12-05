@@ -1,6 +1,8 @@
-# Community Add-on
+# Community Add-on 
 
-This is an unofficial guide to packing your own apps into an  "Add-on Image" for use on AtGames' Legend Ultimate home arcade.
+## (Last verified on firmware version 3.0.11)
+
+This is an unofficial guide to packing your own apps into an  "Add-on Image" for use on AtGames' Legend Ultimate home arcade. 
 
 ## Disclaimer
 We are not obligated to provide updates or fixes to this guide. We are not responsible if the app you developed damages or voids the warranty on the Legends Ultimate home arcade. Please use this guide responsibly, as we are strong believers in intellectual property rights and do not advocate copyright infringement in any way. It is the sole responsibility of the developer to obtain any and all rights to use and/or distribute any and all software and related items packaged.
@@ -13,7 +15,7 @@ The following sections will prepare your home arcade, as well as the files to be
 ### Prerequisites
 Make sure you have the following ready:
 
-- Arcade console running firmware **3.0.11** or later
+- Arcade console running firmware **3.0.11** 
   - Please follow the official OTA upgrade procedure from the user manual to update your firmware to a compatible version
 - A USB drive with enough storage to hold your files
   - Please make sure the drive is formatted in FAT(FAT32, exFAT) file system
@@ -157,6 +159,3 @@ Q: I am unable to enter my add-on game after new firmware update, it just takes 
 
 Q: I'd like to develop my own games and try them out on the arcade, where do I start?
 > I'm looking into this now, check back in a bit and I'll update this repo with what I can find.
-
-## Versioning 
-We will try to follow the SemVer convention, starting with 0.9.0.
