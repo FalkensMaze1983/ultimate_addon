@@ -1,8 +1,9 @@
-## How to play an add-on game? 
+## How to build an add-on file? 
 1. Download and install the add-on tool to your Win32 PC. 
 1. Execute the AddOn Tool.
-1. Choose an emulator core (.so) and a game ROM. (Box art and **bezel art** are optional.)
-   *Bezel art needs to be a 1280x720 PNG image*
+1. Choose an emulator core (.so) and a game ROM
+   - boxart *(optional)* will be resized to 222x306 
+   - bezel art *(optional)* will be resized to 1280x720 
 1. Click “Build Package…”, then select a path to save the UCE package.
 1. Put the UCE package to root of your USB pen-drive.
 1. Plug the USB pen-drive to the arcade cabinet. 
