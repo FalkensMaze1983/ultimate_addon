@@ -1,6 +1,6 @@
 # Community Add-on 
 
-## (Last verified on firmware version 3.0.11)
+## (Last verified on firmware version 3.0.19)
 
 This is an unofficial guide to packing your own apps into an  "Add-on Image" for use on AtGames' Legend Ultimate home arcade. 
 
@@ -15,7 +15,7 @@ The following sections will prepare your home arcade, as well as the files to be
 ### Prerequisites
 Make sure you have the following ready:
 
-- Arcade console running firmware **3.0.11** 
+- Arcade console running firmware **3.0.19 or later** 
   - Please follow the official OTA upgrade procedure from the user manual to update your firmware to a compatible version
 - A USB drive with enough storage to hold your files
   - Please make sure the drive is formatted in FAT(FAT32, exFAT) file system
