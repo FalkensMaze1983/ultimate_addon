@@ -1,4 +1,9 @@
-## How to build an add-on file? 
+# Update
+
+The Windows add-on tool has been updated to resize the boxart to ~100KB. This used to be left as-is and some people used boxarts that are 2~3MB each. To take advantage of this, the user will need to repack using the new Windows tool (rc9 and later).
+
+# How to build an add-on file? 
+
 1. Download and install the add-on tool to your Win32 PC. 
 1. Execute the AddOn Tool.
 1. Choose an emulator core (.so) and a game ROM
