@@ -10,7 +10,7 @@ The Windows add-on tool has been updated to resize the box art to a resolution o
 
 # How to build an add-on file? 
 
-1. Download and install the add-on tool to your Win32 PC. 
+1. Download and install the add-on tool to your Windows PC (Windows XP or earlier is not supported). 
 1. Run the AddOn Tool.
 
 ## Single Package
